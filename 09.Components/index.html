@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mijn Site</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mijn Site</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Info</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="bg-light text-center p-5">
+    <h1>Welkom op onze website!</h1>
+    <p>Gemaakt met liefde… en een klein beetje frustratie toen CSS niet werkte 😭</p>
+</header>
+
+<div class="container my-5">
+
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-success text-center">
+                Hoera! Geen errors 
+                <span class="badge bg-success">Nieuw</span>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="row mt-4">
+
+        <div class="col-12 col-md-4">
+            <div class="card p-3">
+                <h5>Wat doen we? <span class="badge bg-primary">Info</span></h5>
+                <p>Wij bouwen websites die er professioneel uitzien.</p>
+                <button class="btn btn-primary w-100">Toon magie</button>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card p-3">
+                <h5>Voor wie is dit? <span class="badge bg-danger">Ego</span></h5>
+                <p>Voor studenten die HTML ontdekken.</p>
+                <button class="btn btn-danger w-100">Auw, mijn ego</button>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card p-3">
+                <h5>Waarom Bootstrap? <span class="badge bg-warning text-dark">CSS</span></h5>
+                <p>Omdat CSS soms alles kapot maakt 😭</p>
+                <button class="btn btn-warning w-100">Red me</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card p-4 text-center">
+                <h4>Extra info <span class="badge bg-info">NEW</span></h4>
+                <p>Klik gerust. Ze doen toch niets… maar je voelt je wel bezig.</p>
+                <button class="btn btn-success">Klik mij</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <h2 class="mt-5">Veelgestelde vragen</h2>
+
+    <div class="accordion mt-3">
+
+        <div class="accordion-item">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+                Moet ik Bootstrap installeren?
+            </button>
+            <div id="q1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    Nee. Gewoon copy-paste zoals iedereen 😎
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+                Wat zijn components?
+            </button>
+            <div id="q2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Kant-en-klare stukjes die je leven makkelijker maken.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="mt-5">Contact</h2>
+
+    <form class="mt-3">
+        <div class="mb-3">
+            <label class="form-label">Naam</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Bericht</label>
+            <textarea class="form-control"></textarea>
+        </div>
+
+        <button class="btn btn-primary">Verstuur</button>
+    </form>
+
+</div>
+
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    © 2025 Mijn Site – Alle rechten voorbehouden (behalve de bugs 😭)
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

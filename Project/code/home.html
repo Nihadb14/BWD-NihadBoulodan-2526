@@ -161,3 +161,26 @@
 
 </body>
 </html>
+<!-- container -->
+<div id="products" class="grid md:grid-cols-3 gap-6"></div>
+
+<script src="app.js"></script>
+
+<script>
+  const container = document.getElementById("products");
+
+  products.forEach(p => {
+    container.innerHTML += `
+      <div class="bg-gray-800 p-4 rounded">
+        <h3>${p.name}</h3>
+        <p class="text-gray-400">${p.desc}</p>
+        <p class="text-blue-400 font-bold">€${p.price}</p>
+
+        <button onclick="addToCart(${p.id})"
+        class="bg-blue-500 w-full mt-3 py-2 rounded">
+          Voeg toe
+        </button>
+      </div>
+    `;
+  });
+</script>
